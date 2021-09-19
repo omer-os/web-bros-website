@@ -161,103 +161,58 @@ header{
 
 /* sec2 */
 .sec2{
-    height: 60vh;
-    background-color: white;
-    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+.sec2-title{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.sec2-slogan{
+    font-size: 1.5em;
+    max-width: 450px;
+    text-align: center;
+    margin-top:10px;
+}
+.sec2-projects{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "title title title"
-    "who . why"
-    "bottom bottom bottom";
-
-    max-width: 800px;
-    margin: auto;
-    padding: 20px 0;
+    grid-template-columns: repeat(3 , minmax(150px , 250px));
+    grid-template-rows: auto;
+    height: fit-content;
+    column-gap: 5vw;
+    margin: 0 40px;
+    margin-top: 30px;
 }
-
-.sec2Title{
-    grid-area: title;
+.project-box{
+    background-color:white;
+    box-shadow: 0 0 15px rgb(138, 138, 138);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 2em;
-    font-weight: 700;
-}
-.sec2Who{
-    grid-area: who;
-}
-.sec2Why{
-    grid-area: why;
-}
-.sec2Bottom{
-    grid-area: bottom;
-    text-align: center;
-    text-decoration: underline;
-    color: #FF3A3A;
+    gap: 10px;
 }
 
-
-
-
-.sec2-who-title{
-    font-size: 1.9em;
+.project-img{
+    width: 50px;
+}
+.project-title{
+    font-size: 1.3em;
     font-weight: 600;
-    margin-bottom: 10px;
-    min-width: fit-content;
 }
-.sec2-why-title{
-    font-size: 1.9em;
-    font-weight: 600;
-    margin-bottom: 10px;
-    min-width: fit-content;
-}
-
-.sec2-who-content{
+.project-content{
     font-size: 1.1em;
-    min-width: 250px;
 }
-.sec2-why-content{
-    font-size: 1.1em;
-    min-width: 250px;
-}
-
-
-@media (max-width: 600px) {
-    .sec2{
-        max-width: 90%;
-        grid-template-areas: 
-        "title title title"
-        "who who who"
-        "why why why"
-        "bottom bottom bottom";
-    }
-    .sec2Who{
-        text-align: center;
-        margin: 20px auto;
-        max-width: 400px;
-    }
-    .sec2Why{
-        text-align: center;
-        margin: 20px auto;
-        max-width: 400px;
-    }
-
-
-}
-
-@media (max-width: 500px) {
-    .sec2Title{
-        font-size: 1.6em;
-    }
-    .sec2-who-title{
-        font-size: 1.4em;
-    }
-    .sec2-who-content{
-        font-size: 1.2em;
-    }
-    .sec2-why-title{
-        font-size: 1.4em;
-    }
-    .sec2-why-content{
-        font-size: 1.2em;
+@media (max-width: 750px){
+    .sec2-projects{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }.project-box{
+        max-width:300px;
     }
 }
