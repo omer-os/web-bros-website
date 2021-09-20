@@ -41,12 +41,19 @@ $('.services').click(()=>{
 
 
 
-$('.contact,.sec1-btn').click(()=>{
+$('.contact').click(()=>{
     $(".sec4")[0].scrollIntoView({
         behavior: "smooth", // or "auto" or "instant"
         block: "end" // or "end"
     });
     toggleNavBar()
+})
+$('.sec1-btn').click(()=>{
+    $(".sec4")[0].scrollIntoView({
+        behavior: "smooth", // or "auto" or "instant"
+        block: "end" // or "end"
+    });
+    // toggleNavBar()
 })
 
 $('.projects').click(()=>{

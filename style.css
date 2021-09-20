@@ -257,7 +257,7 @@ header{
 }
 
 .sec3-project{
-    background-image: url(./imgs/pro4.png);
+    background: rgb(188, 243, 255);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -294,6 +294,14 @@ header{
 }.sec3-proj-body{
     font-size:1.1em;
 }
+
+.chat-project{
+    background-image: url(./imgs/livechatproject.png);
+}
+.portfolio-project{
+    background-image: url(./imgs/prtfolioproject.png)
+}
+
 
 @media (max-width: 700px){
     .sec3{
