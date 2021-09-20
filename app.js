@@ -17,9 +17,9 @@ $('.burgerBtn').click(()=>{toggleNavBar()})
 
 // navigation bar scrolling -START-
 $('.services').click(()=>{
-    $(".sec2")[0].scrollIntoView({
+    $(".sec2-title")[0].scrollIntoView({
         behavior: "smooth", // or "auto" or "instant"
-        block: "start" // or "end"
+        block: "start"
     });
     toggleNavBar()
 })
