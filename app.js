@@ -41,7 +41,7 @@ $('.services').click(()=>{
 
 
 
-$('.contact').click(()=>{
+$('.contact,.sec1-btn').click(()=>{
     $(".sec4")[0].scrollIntoView({
         behavior: "smooth", // or "auto" or "instant"
         block: "end" // or "end"
