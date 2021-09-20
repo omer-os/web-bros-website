@@ -312,3 +312,67 @@ header{
         font-size: 4vw;
     }
 }
+
+
+
+.sec4{
+    background-color: #273245;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    flex-direction: column;
+}
+
+.sec4-title{
+    font-size: 1.3em;
+    max-width: 550px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-us-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    column-gap: 15px;
+}
+
+.con{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #30405B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 600px) {
+    .con{
+        font-size: .9em;
+    }
+    .sec4-title{
+        font-size: 1em;
+    }
+}
+
+.con-img{
+    background-image: url(./imgs/insta.png);
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+}
+
+.con-name{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+}
+
+
+.con:hover{
+    transform: scale(.95);
+}
